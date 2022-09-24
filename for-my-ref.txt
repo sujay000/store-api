@@ -1,0 +1,8 @@
+
+for the .env variable
+MONGO_URI = mongodb+srv://atlassujay:'password'@nodeexpressprojects.qmvzae9.mongodb.net/'project-name-here'?retryWrites=true&w=majority
+
+'password'
+'project-name-here'
+
+both without quote, must be entered

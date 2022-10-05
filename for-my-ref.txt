@@ -36,3 +36,16 @@ await Product.create(jsonProducts)
 // we can also pass in array it directly makes them separate products
 
 jsonProducts is an array here
+
+
+------------------------------------------------------------
+
+mongodb query operators (https://www.mongodb.com/docs/manual/reference/operator/query/)
+
+queryObject.name = { $regex: name, $options: 'i' }
+
+syntax             { <field>: { $regex: /pattern/, $options: '<options>' } }
+
+option 'i' is option for 'case-insensitive'
+
+------------------------------------------------------------

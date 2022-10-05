@@ -6,3 +6,33 @@ MONGO_URI = mongodb+srv://atlassujay:'password'@nodeexpressprojects.qmvzae9.mong
 'project-name-here'
 
 both without quote, must be entered
+
+------------------------------------------------------------
+
+instead of try-catch block or custom async wrapper
+we can use express-async-error package from npm so as to avoid the error block
+
+just need to add in app.js file
+ " require('express-async-errors') " 
+
+------------------------------------------------------------
+
+in mongoose when we want the user to choose among certain options
+then we can do it like this
+
+ enum: {
+            values: ['ikea', 'liddy', 'caressa', 'marcos'],
+            message: '{VALUE} is not supported',
+        },
+
+    here    VALUE is the error that is caught 
+
+ or we can do
+     enum: ['ikea', 'liddy', 'caressa', 'marcos'],
+
+------------------------------------------------------------
+
+await Product.create(jsonProducts) 
+// we can also pass in array it directly makes them separate products
+
+jsonProducts is an array here
